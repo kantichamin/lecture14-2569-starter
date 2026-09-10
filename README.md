@@ -211,7 +211,7 @@ value={form.fname}
 ```tsx
 //5.7. สำหรับ Conditional Rendering แยกต่างหาก (เช่น Radio button)
 {
-  errors.gender && <div className="text-danger">Please select gender</div>;
+  errors.gender && <div className="text-danger">Please select gender</div>
 }
 ```
 
@@ -238,7 +238,7 @@ const [showModal, setShowModal] = useState(false);
 ```
 
 ```tsx
-//6.4. กการรับ Props (Props Destructuring)
+//6.4. การรับ Props (Props Destructuring)
 export default function ModalRegister({ onClose }: { onClose: () => void }) {}
 ```
 
@@ -247,7 +247,7 @@ export default function ModalRegister({ onClose }: { onClose: () => void }) {}
 ```tsx
 //6.5. การส่ง Prop onClose เพื่อสั่งปิด
 {
-  showModal && <ModalRegister onClose={() => setShowModal(false)} />;
+  showModal && <ModalRegister onClose={() => setShowModal(false)} />
 }
 ```
 
